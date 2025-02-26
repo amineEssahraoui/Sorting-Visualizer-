@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Amine Essahraoui">
+  <title>Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Algorithm Visualizer</h1>
+    
+    <div class="controls-grid">
+      <div class="control-group">
+        <div class="control-label">Data Generation</div>
+        <button id="generate-random">🎲 Randomize</button>
+        <input type="number" id="bar-count-input" min="5" max="150" value="30" class="modern-input">
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">Custom Input</div>
+        <input type="text" id="custom-input" placeholder="Ex: 25,40,15" class="modern-input">
+        <button id="apply-custom">✏️ Apply</button>
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">Algorithm</div>
+        <select id="algorithm-select" class="modern-select">
+          <option value="bubble-sort">Bubble Sort</option>
+          <option value="selection-sort">Selection Sort</option>
+          <option value="insertion-sort">Insertion Sort</option>
+          <option value="merge-sort">Merge Sort</option>
+          <option value="quick-sort">Quick Sort</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <div class="control-label">Controls</div>
+        <button id="start-sort">🚀 Start</button>
+        <button id="stop-sort">⏹️ Stop</button>
+      </div>
+
+      <div class="control-group speed-control">
+        <div class="control-label">Speed</div>
+        <input type="range" id="speed-slider" min="1" max="100" value="50">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="bars-container"></div>
+  </main>
+  <footer>
+    <p>🔬 Sorting Algorithm Visualization | Amine Essahraoui</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
